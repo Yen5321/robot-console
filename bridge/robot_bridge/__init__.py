@@ -1,0 +1,4 @@
+"""Robot-side control, telemetry, and video bridge."""
+
+__version__ = "0.1.0"
+

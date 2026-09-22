@@ -1,0 +1,54 @@
+{
+  "upstream": "https://github.com/agilexrobotics/agx_arm_urdf",
+  "commit": "f6642ce0d7872c686f29c99e9e10cd23d1d49313",
+  "control_point": "base_link -> link6 (SDK flange)",
+  "finger_envelopes": {
+    "1": {
+      "min_m": [
+        -0.03000000086426735,
+        -0.07850000173688514,
+        0.0595000015376911
+      ],
+      "max_m": [
+        0.03000000086426735,
+        0.0020000000000000065,
+        0.14000000152730915
+      ],
+      "padding_m": 0.002
+    },
+    "2": {
+      "min_m": [
+        -0.030000004427988655,
+        -0.0020000005358979246,
+        0.0595000015376911
+      ],
+      "max_m": [
+        0.030000000703497835,
+        0.07850000247374479,
+        0.14000000152730915
+      ],
+      "padding_m": 0.002
+    }
+  },
+  "collision_exclusions": "direct neighbors and rigid flange/gripper assembly only; not generic Piper ACM",
+  "hardware_verified": false,
+  "sha256": {
+    "piper_l.srdf": "f0ec8ca7c7100bc560d56ee685755660608b6753d7df79e96fe8283fcd758c31",
+    "piper_l_stock_gripper.urdf": "593156fd0320ceac4a5ca6a7ab62c534c6efd9718c465ce094d39608e963ef30",
+    "meshes/base_link.stl": "fd4c7563638901bd4167246a3b6eae33cfceff8c7fc59e585f297a88a5752bac",
+    "meshes/flange.stl": "f9ce752f93a6598858a779e3d8755a09e466b588efcffc3a1c3953773753a22b",
+    "meshes/gripper_base.stl": "0b839dc0bcb7d94e3422c74f6396b54a0441ba4836448ab5586e7f372d1bdbf3",
+    "meshes/gripper_link1.stl": "475a7d8db056524d7659fadf5a2c307d62791047b6214d733dfc7846ed1c613d",
+    "meshes/gripper_link2.stl": "3f88d534a85e28a33ef7d2061adacbd1d25214aa9325f9e464aad0f9e4b74606",
+    "meshes/link1.stl": "84d753cd2a9dceac19c6870b0d3078a6abf44ea7ca7360fc5a2e8b1fd0b427cf",
+    "meshes/link2.stl": "4d15e9870d8a3e9223fba8b304a508842acfc7cf69c4fc74bb3e9c1bf07260c0",
+    "meshes/link3.stl": "4581c9901c0aec55f4f02ddd1a4327404344b0a193cd13b383aaa23429dd9ae2",
+    "meshes/link4.stl": "c296926ec78349c963ee6f02098cbd7ef460ec14ba6bc5d4a4577c35176c3bbd",
+    "meshes/link5.stl": "de4e3c27a806fd4a60232760dfcf584dd20942ac941e0e0705ef23ecef923d2b",
+    "meshes/link6.stl": "91c70e84f44eb685c65d96ff13d66dc9a894eb14460f0dfaa02be45bdb100f6d",
+    "upstream/piper_l_description.urdf": "d289652c494017ca8d50152343fdbd02fd25c4f1ac3bb80d59d1f2f3cfab6fda",
+    "upstream/piper_l_with_gripper_description.xacro": "8136b85f30043421fffbde0299806e652ac283a28f5ce7485d52903eb4aa4c4c",
+    "upstream/piper_l_with_left_revo2_description.xacro": "d38ff4ee2f10d91f155a687cb0408a88f38f75ed769e9057f3500e6d2d4cf505",
+    "upstream/piper_l_with_right_revo2_description.xacro": "8520d96fc6e393ff739ae494f1e9d6cc4f17852e7073d89768aa8cbc52dbc336"
+  }
+}

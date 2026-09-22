@@ -1,0 +1,22 @@
+# v8.1 首轮硬限制说明（只读说明文件，不是绕过验收或热调参接口）。
+# 真正执行常量位于 cpv_policy.py / cpv_node.py；修改必须重新测试和验收。
+robot: piper_l
+firmware_expected: S-V1.9-0260716
+sdk_profile: PiperFW.V189
+control_point: link6  # SDK 法兰，非夹爪尖端；ROS 基座为 base_link
+cycle_hz: 100
+linear_speed_mm_s: 2
+angular_speed_deg_s: 1
+joint_velocity_rad_s: 0.05
+joint_acceleration_rad_s2: 0.1
+input_timeout_ms: 250
+feedback_timeout_ms: 250  # 位置三组、末端三组、六轴使能、状态各自检查
+servo_timeout_ms: 100
+single_joint_test_rad_s: 0.01
+single_joint_test_duration_s: 0.5  # 包括 0.1 秒减速，目标非零最长 0.4 秒
+zero_hold_test_s: 5
+fk_position_tolerance_mm: 5
+fk_rotation_tolerance_deg: 2
+hold_drift_tolerance_mm: 2
+hold_drift_tolerance_deg: 1
+# 有效能力由 /diagnostics 返回；不读取旧高速设置恢复运动。

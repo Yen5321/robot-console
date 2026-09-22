@@ -1,0 +1,6 @@
+# 接收式 CAN 解码依赖，安装到工程 .deps-readonly，不覆盖现有机器人虚拟环境。
+piper_sdk==0.6.2
+python-can==4.6.1
+packaging==26.3
+typing_extensions==4.16.0
+wrapt==1.17.3

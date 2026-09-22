@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>console_servo_stamp</name><version>8.1.0</version>
+  <description>Preserve DDS source time for Humble Servo immediate trajectories</description>
+  <maintainer email="maintainer@example.invalid">Robot Console</maintainer><license>Proprietary</license>
+  <buildtool_depend>ament_cmake</buildtool_depend><depend>rclcpp</depend><depend>trajectory_msgs</depend><depend>moveit_ros_planning</depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>

@@ -1,0 +1,19 @@
+{
+  "os": "Ubuntu 22.04 amd64",
+  "ros_distribution": "humble",
+  "tested_debian_packages": {
+    "ros-humble-moveit-servo": "2.5.9-1jammy.20260804.224212",
+    "ros-humble-moveit-core": "2.5.9-1jammy.20260804.210148",
+    "ros-humble-moveit-ros-planning": "2.5.9-1jammy.20260804.214756",
+    "ros-humble-rclcpp": "16.0.19-1jammy.20260724.021311",
+    "ros-humble-rclpy": "3.3.21-1jammy.20260724.022150",
+    "ros-humble-robot-state-publisher": "3.0.3-2jammy.20260804.200125"
+  },
+  "upstream": {
+    "agx_arm_urdf": "f6642ce0d7872c686f29c99e9e10cd23d1d49313",
+    "piper_ros_acm": "017ffefa64511bc6325bd77ddc4e16065c152051",
+    "pyAgxArm_reference_only_not_executed": "e7aef17d54cac80cbaeb1b4110ab3d8f1337a95b"
+  },
+  "windows": {"framework": "net8.0-windows10.0.17763.0", "WebView2": "1.0.4191.47"},
+  "status": "Windows + Ubuntu 22.04 WSL simulation tested; N100 hardware not commissioned"
+}

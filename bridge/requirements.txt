@@ -1,0 +1,6 @@
+PyYAML>=6.0,<7
+numpy>=1.24
+opencv-python>=4.8
+pyrealsense2>=2.54
+piper_sdk>=0.6.2,<0.7
+

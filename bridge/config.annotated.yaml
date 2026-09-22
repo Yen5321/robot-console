@@ -1,0 +1,27 @@
+# v8 只读反馈：在另一个终端启动 tools/start-ros.sh readonly。
+# 本文件不控制 CAN 名称；使用 start-ros.sh readonly can_name:=can0。
+arm:
+  driver: ros_servo
+  endpoint: http://127.0.0.1:9088
+camera:
+  driver: d435_process   # 采集/编码运行在独立进程
+  width: 640
+  height: 480
+  fps: 30
+  jpeg_quality: 80
+  serial: null
+network:
+  bind_host: 0.0.0.0
+  udp_port: 9000
+  http_port: 8080
+  telemetry_hz: 10.0
+  command_timeout_s: 0.25
+  sequence_reset_after_s: 2.0
+  audit_path: logs/jog-v8.jsonl
+telemetry:
+  battery_percent: 0
+  end_distance_ok: false
+  shield_in_position: false
+  work_area_clear: false
+laser:
+  driver: noop

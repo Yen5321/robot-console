@@ -1,0 +1,11 @@
+# 仅地面模拟/只读；没有 enable_real_motion 或关闭全部保护的选项。
+# SI 内部单位。下列限值不是实机已验证能力。修改后需要重启两个 ROS 包。
+cycle_hz: 100                       # 50–100 Hz；初始 100，需在 N100 带视频测量延迟
+input_timeout_s: 0.25               # 0.05–0.25 s；输入与完整反馈最大年龄，不可禁用
+linear_speed_m_s: 0.05              # 0.002–0.05 m/s；客户端启动默认 0.002
+angular_speed_rad_s: 0.1745329252    # 1–10°/s；客户端启动默认 1°/s
+linear_acceleration_m_s2: 0.10      # 0.01–0.10；减速会产生剩余位移，需实测
+angular_acceleration_rad_s2: 0.3490658504  # 0.01745–0.3491；约 20°/s²
+joint_velocity_rad_s: 0.30          # 0.01–0.30；最终关节速度上限，模型有更严限制时从严
+joint_acceleration_rad_s2: 0.60     # 0.01–0.60；最终关节加减速上限
+workspace_m: [[-0.5, 0.5], [-0.5, 0.5], [0.0, 0.6]] # 基座 XYZ，非外部避碰模型

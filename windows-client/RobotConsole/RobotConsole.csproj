@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows10.0.17763.0</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>RustRemoval.RobotConsole</AssemblyName>
+    <RootNamespace>RustRemoval.RobotConsole</RootNamespace>
+    <Version>8.1.0</Version>
+    <InformationalVersion>8.1.0-piper-l-cpv</InformationalVersion>
+    <!-- Keep the deliverable on .NET 8 while allowing development machines with only a newer desktop runtime. -->
+    <RollForward>Major</RollForward>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Update="robotlink.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Update="jog-directions.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Update="PROTOCOL.md" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.4191.47" />
+  </ItemGroup>
+</Project>
+

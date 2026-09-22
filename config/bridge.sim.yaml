@@ -1,0 +1,21 @@
+# v8 模拟配置：不连接 CAN，不开启相机；真实 MoveIt Servo + 模拟关节执行。
+arm:
+  driver: ros_servo
+  endpoint: http://127.0.0.1:9088
+camera:
+  driver: none
+network:
+  bind_host: 0.0.0.0
+  udp_port: 9000
+  http_port: 8080
+  telemetry_hz: 10.0
+  command_timeout_s: 0.25  # 有效 UDP 间隔上限，不允许禁用
+  sequence_reset_after_s: 2.0
+  audit_path: logs/jog-v8.jsonl
+telemetry:
+  battery_percent: 0
+  end_distance_ok: false
+  shield_in_position: false
+  work_area_clear: false
+laser:
+  driver: noop

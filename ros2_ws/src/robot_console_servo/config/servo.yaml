@@ -1,0 +1,30 @@
+# ROS Humble MoveIt Servo。SI 单位；修改后重启，禁止运动中热改。
+command_in_type: speed_units
+scale: {linear: 0.05, rotational: 0.1745329252, joint: 0.3}
+publish_period: 0.01                 # 目标 100 Hz，不是实时性能保证
+low_latency_mode: false
+command_out_type: trajectory_msgs/JointTrajectory
+publish_joint_positions: true
+publish_joint_velocities: true
+publish_joint_accelerations: false
+smoothing_filter_plugin_name: online_signal_smoothing::ButterworthFilterPlugin
+is_primary_planning_scene_monitor: true
+move_group_name: arm
+planning_frame: base_link
+ee_frame_name: link6                 # 官方模型末端；实机与 SDK 末端尚需对齐核验
+robot_link_command_frame: base_link
+incoming_command_timeout: 0.1        # ROS 输入失联 100 ms；外部 UDP 仍为 250 ms
+num_outgoing_halt_msgs_to_publish: 0  # 持续输出停止指令，避免误判静止为 Servo 退出
+lower_singularity_threshold: 17.0
+hard_stop_singularity_threshold: 30.0
+leaving_singularity_threshold_multiplier: 2.0
+joint_limit_margin: 0.10             # rad，模型限位前减速；仍检查制动距离
+cartesian_command_in_topic: /servo_node/delta_twist_cmds
+joint_command_in_topic: /servo_node/delta_joint_cmds
+joint_topic: /joint_states
+status_topic: /servo_node/status
+command_out_topic: /console/servo_output
+check_collisions: true
+collision_check_rate: 10.0
+self_collision_proximity_threshold: 0.005  # 5 mm low-speed proximity; collision checking remains on
+scene_collision_proximity_threshold: 0.02

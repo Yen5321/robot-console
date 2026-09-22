@@ -1,0 +1,26 @@
+{
+    "configurations": [
+        {
+            "name": "Windows + ROS 2 Humble (WSL)",
+            "includePath": [
+                "${workspaceFolder}/ros2_ws/src/**",
+                "//wsl.localhost/Ubuntu-22.04/opt/ros/humble/include/**",
+                "//wsl.localhost/Ubuntu-22.04/usr/include/eigen3"
+            ],
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/ros2_ws/src",
+                    "//wsl.localhost/Ubuntu-22.04/opt/ros/humble/include",
+                    "//wsl.localhost/Ubuntu-22.04/usr/include/eigen3"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "defines": [],
+            "windowsSdkVersion": "10.0.19041.0",
+            "intelliSenseMode": "windows-msvc-x64",
+            "cppStandard": "c++17",
+            "cStandard": "c17"
+        }
+    ],
+    "version": 4
+}

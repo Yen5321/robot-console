@@ -1,0 +1,25 @@
+<UserControl x:Class="RustRemoval.RobotConsole.Controls.VirtualJoystick"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             MinWidth="150" MinHeight="150"
+             IsManipulationEnabled="True">
+    <Grid x:Name="Surface" Background="Transparent"
+          MouseLeftButtonDown="Surface_MouseLeftButtonDown"
+          MouseMove="Surface_MouseMove"
+          MouseLeftButtonUp="Surface_MouseLeftButtonUp"
+          LostMouseCapture="Surface_LostMouseCapture"
+          TouchDown="Surface_TouchDown"
+          TouchMove="Surface_TouchMove"
+          TouchUp="Surface_TouchUp"
+          LostTouchCapture="Surface_LostTouchCapture">
+        <Ellipse Margin="6" Fill="#182532" Stroke="#4D6578" StrokeThickness="3"/>
+        <Ellipse Margin="33" Fill="Transparent" Stroke="#30485B" StrokeThickness="1"/>
+        <Line X1="0" Y1="0" X2="0" Y2="1" Stretch="Fill" Margin="50,20" Stroke="#3A5162" StrokeThickness="1"/>
+        <Line X1="0" Y1="0" X2="1" Y2="0" Stretch="Fill" Margin="20,50" Stroke="#3A5162" StrokeThickness="1"/>
+        <Ellipse x:Name="Knob" Width="64" Height="64" Fill="#20B8CD" Stroke="#A8F5FF" StrokeThickness="3"
+                 HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Ellipse.Effect><DropShadowEffect Color="#20B8CD" BlurRadius="16" ShadowDepth="0" Opacity="0.6"/></Ellipse.Effect>
+            <Ellipse.RenderTransform><TranslateTransform x:Name="KnobTransform"/></Ellipse.RenderTransform>
+        </Ellipse>
+    </Grid>
+</UserControl>

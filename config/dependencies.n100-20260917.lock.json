@@ -1,0 +1,15 @@
+{
+  "os": "Ubuntu 22.04 amd64",
+  "ros_distribution": "humble",
+  "status": "N100 mirror candidates reported by user on 2026-09-17; installation, build and simulation NOT YET verified",
+  "source": "https://mirrors.ustc.edu.cn/ros2/ubuntu jammy/main amd64; apt-cache policy supplied by operator",
+  "requested_debian_packages": {
+    "ros-humble-ros-base": "0.10.0-1jammy.20260908.101203",
+    "ros-humble-rclcpp": "16.0.21-1jammy.20260907.213403",
+    "ros-humble-rclpy": "3.3.22-1jammy.20260907.213431",
+    "ros-humble-moveit-servo": "2.5.10-1jammy.20260908.204514",
+    "ros-humble-moveit-core": "2.5.10-1jammy.20260908.071525",
+    "ros-humble-moveit-ros-planning": "2.5.10-1jammy.20260908.081349",
+    "ros-humble-robot-state-publisher": "3.0.3-2jammy.20260907.225951"
+  }
+}

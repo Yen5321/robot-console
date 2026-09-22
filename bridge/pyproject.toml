@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tower-robot-bridge"
+version = "8.0.0"
+description = "Robot-side UDP telemetry/control and MJPEG bridge"
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+include = ["robot_bridge*"]
+

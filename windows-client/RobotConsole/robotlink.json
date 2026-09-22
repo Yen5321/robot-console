@@ -1,0 +1,16 @@
+{
+  "Mode": "Real",
+  "RobotHost": "10.126.122.113",
+  "UdpPort": 9000,
+  "MjpegUrl": "http://10.126.122.113:8080/stream.mjpg",
+  "CommandIntervalMs": 50,
+  "ControlTimeoutMs": 350,
+  "VideoTimeoutMs": 2500,
+  "VideoTransport": "WebRTC",
+  "WebRtcUrl": "http://10.126.122.113:8889/robot/",
+  "BackupRobotHost": null,
+  "BackupHttpUrl": null,
+  "BackupWebRtcUrl": null,
+  "LocalBindAddress": null,
+  "BackupLocalBindAddress": null
+}
